@@ -23,7 +23,7 @@ default_args = {
 }
 
 # Using a DAG context manager, you don't have to specify the dag property of each task
-with DAG('example_dag30_copy',
+with DAG('example_dag35_copy',
          start_date=datetime(2019, 1, 1),
          max_active_runs=3,
          schedule_interval=timedelta(minutes=30),  # https://airflow.apache.org/docs/stable/scheduler.html#dag-runs
